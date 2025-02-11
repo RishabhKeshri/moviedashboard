@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Video Dashboard</title>
+    <link rel="stylesheet" href="new.css">
+</head>
+<body>
+    <header class="navbar">
+        <h1>Rishabh Keshri 22BBS0050</h1>
+        <nav>
+            <ul>
+                <li><a href="#movies-section">Movies</a></li>
+                <li><a href="#tv-series-section">TV Series</a></li>
+                <li><a href="#trending-section">Trending</a></li>
+                <li><a href="#most-watched-section">Most Watched</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="language-bar">
+        <h2>Select Language</h2>
+        <div class="language-options">
+            <span data-lang="Tamil">Tamil</span>
+            <span data-lang="Hindi">Hindi</span>
+            <span data-lang="Malayalam">Malayalam</span>
+            <span data-lang="English">English</span>
+            <span data-lang="Kannada">Kannada</span>
+            <span data-lang="Telugu">Telugu</span>
+        </div>
+    </div>
+
+    <main id="video-sections">
+        <section id="movies-section" class="video-category">
+            <h2>Recent Movies</h2>
+            <div class="video-grid" id="movies-grid">
+                <!-- Movie thumbnails will be injected here -->
+            </div>
+        </section>
+
+        <section id="tv-series-section" class="video-category">
+            <h2>Recent TV Series</h2>
+            <div class="video-grid" id="tv-series-grid">
+                <!-- TV Series thumbnails will be injected here -->
+            </div>
+        </section>
+
+        <section id="trending-section" class="video-category">
+            <h2>Trending Videos</h2>
+            <div class="video-grid" id="trending-grid">
+                <!-- Trending thumbnails will be injected here -->
+            </div>
+        </section>
+
+        <section id="most-watched-section" class="video-category">
+            <h2>Most Watched</h2>
+            <div class="video-grid" id="most-watched-grid">
+                <!-- Most Watched thumbnails will be injected here -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal for Play Now feature -->
+    <div id="video-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h3>Now Playing: <span id="modal-title"></span></h3>
+            <p>Enjoy your movie!</p>
+        </div>
+    </div>
+
+    <script src="new.js"></script>
+</body>
+</html>
